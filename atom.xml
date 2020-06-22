@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-06-22T12:29:05.702Z</updated>
+    <updated>2020-06-22T12:32:58.368Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -11,12 +11,31 @@
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[主页]]></title>
+        <title type="html"><![CDATA[个人简介]]></title>
         <id>https://Iseulf.github.io/post/zhu-ye/</id>
         <link href="https://Iseulf.github.io/post/zhu-ye/">
         </link>
         <updated>2020-06-22T12:20:59.000Z</updated>
-        <content type="html"><![CDATA[<p>我的专业</p>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>所属单位</th>
+<th>职位</th>
+<th>从事专业</th>
+<th>联系方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>方成峰</td>
+<td>中国科学技术大学</td>
+<td>大四学生</td>
+<td>微电子</td>
+<td>QQ:3291866467</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
     </entry>
 </feed>
