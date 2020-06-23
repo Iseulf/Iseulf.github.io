@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-23T04:51:49.536Z</updated>
+    <updated>2020-06-23T09:29:41.223Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://Iseulf.github.io/images/avatar.png</logo>
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Iseulf</rights>
+    <entry>
+        <title type="html"><![CDATA[软件推荐---Listary Pro]]></title>
+        <id>https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/</id>
+        <link href="https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/">
+        </link>
+        <updated>2020-06-23T04:52:02.000Z</updated>
+        <content type="html"><![CDATA[<p>  桌面杂乱无章？各种程序文件齐飞？想找个文件都得通过文件浏览器一级一级得点击？你是否正在经历这样的场景，那么恭喜你，我就是上天派来拯救你的那个帅哥。<br>
+  本次介绍的这款软件就能很好的解决你的痛点。Listary Pro是一款全局唤起软件，无论你在干什么，当你想找一个文件时，只需双击ctrl即可唤起搜索框，输入文件名即可检索。同时也支持输入软件名直接运行软件。<br>
+  欢迎大家前去官网购买正版<a href="https://www.listary.com/pro">官网</a>  。当然如果实在困难，这里也给大家准备了破解版<a href="https://seul.lanzous.com/iTnW4dynm9g">破解版地址</a>。</p>
+<div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/image-20200623130709452.png" width=80%/></div>
+<center style="font-size:14px;color:#C0C0C0;text-decoration:uderline">软件唤出效果图</center>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.6.22]]></title>
         <id>https://Iseulf.github.io/post/2020622/</id>
