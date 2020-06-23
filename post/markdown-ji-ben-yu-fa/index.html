@@ -1,22 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://Iseulf.github.io/</id>
-    <title>Iseulf</title>
-    <updated>2020-06-23T12:15:53.947Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://Iseulf.github.io/"/>
-    <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
-    <subtitle>一个有趣到爆炸的帅哥！</subtitle>
-    <logo>https://Iseulf.github.io/images/avatar.png</logo>
-    <icon>https://Iseulf.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Iseulf</rights>
-    <entry>
-        <title type="html"><![CDATA[Markdown基本语法]]></title>
-        <id>https://Iseulf.github.io/post/markdown-ji-ben-yu-fa/</id>
-        <link href="https://Iseulf.github.io/post/markdown-ji-ben-yu-fa/">
-        </link>
-        <updated>2020-06-23T09:30:07.000Z</updated>
-        <content type="html"><![CDATA[<p>  <strong><code>Markdown是一门用于简化排版的工具，它相对于Word具有公式输入简单化的优点；而对于Latex有具有语法简单的特点，所以对于理工科等需要大量输入公式，但对排版要求不太高的学生和程序员十分适用。</code></strong><br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Markdown基本语法 | Iseulf</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://Iseulf.github.io//favicon.ico?v=1592914549802">
+<link rel="stylesheet" href="https://Iseulf.github.io//styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="  Markdown是一门用于简化排版的工具，它相对于Word具有公式输入简单化的优点；而对于Latex有具有语法简单的特点，所以对于理工科等需要大量输入公式，但对排版要求不太高的学生和程序员十分适用。
+  下面就简单介绍一下Markdow..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://Iseulf.github.io/">
+        <img src="https://Iseulf.github.io//images/avatar.png?v=1592914549802" class="site-logo">
+        <h1 class="site-title">Iseulf</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/Iseulf" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一个有趣到爆炸的帅哥！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://Iseulf.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Markdown基本语法</h2>
+            <div class="post-date">2020-06-23</div>
+            
+            <div class="post-content" v-pre>
+              <p>  <strong><code>Markdown是一门用于简化排版的工具，它相对于Word具有公式输入简单化的优点；而对于Latex有具有语法简单的特点，所以对于理工科等需要大量输入公式，但对排版要求不太高的学生和程序员十分适用。</code></strong><br>
   下面就简单介绍一下Markdown的基本语法。</p>
 <h2 id="1-标题">1、标题</h2>
 <p>  Markdown总共可以划分六个层次的标题，从一级到六级采用一个到六个#来表示，如：</p>
@@ -69,67 +152,75 @@ print('hello world')
 </tr>
 </tbody>
 </table>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[软件推荐---Listary Pro]]></title>
-        <id>https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/</id>
-        <link href="https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/">
-        </link>
-        <updated>2020-06-23T04:52:02.000Z</updated>
-        <content type="html"><![CDATA[<p>  桌面杂乱无章？各种程序文件齐飞？想找个文件都得通过文件浏览器一级一级得点击？你是否正在经历这样的场景，那么恭喜你，我就是上天派来拯救你的那个帅哥。<br>
-  本次介绍的这款软件就能很好的解决你的痛点。Listary Pro是一款全局唤起软件，无论你在干什么，当你想找一个文件时，只需双击ctrl即可唤起搜索框，输入文件名即可检索。同时也支持输入软件名直接运行软件。<br>
-  欢迎大家前去官网购买正版<a href="https://www.listary.com/pro">官网</a>  。当然如果实在困难，这里也给大家准备了破解版<a href="https://seul.lanzous.com/iTnW4dynm9g">破解版地址</a>。</p>
-<div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/image-20200623130709452.png" width=80%/></div>
-<center style="font-size:14px;color:#C0C0C0;text-decoration:uderline">软件唤出效果图</center>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.6.22]]></title>
-        <id>https://Iseulf.github.io/post/2020622/</id>
-        <link href="https://Iseulf.github.io/post/2020622/">
-        </link>
-        <updated>2020-06-22T13:15:29.000Z</updated>
-        <content type="html"><![CDATA[<p>最近好烦啊，在家里什么也没做，对自己有一种浓浓的失望感。<br>
-从小到大，我好像只学会了一件事就是读书，所有人都在你耳边说：你只要读书就好了。但感觉这样的自己好像并不是我想成为的自己。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[软件推荐--PotPlayer]]></title>
-        <id>https://Iseulf.github.io/post/ruan-jian-tui-jian-potplayer/</id>
-        <link href="https://Iseulf.github.io/post/ruan-jian-tui-jian-potplayer/">
-        </link>
-        <updated>2020-06-22T13:09:22.000Z</updated>
-        <content type="html"><![CDATA[<p>  PotPlayer是一款及其好用的视频播放器，支持各种视频格式，还支持导入直播源。并且还可以调整倍速，速度最高可以调到10。<br>
-  下面是下载地址：<a href="https://seul.lanzous.com/b01bi6r3c">PotPlayer</a>  密码:9o1k。<br>
-  下载完成之后，双击exe文件，安装完成之后再解压直播源文件到桌面，再将里面的文件拖动到PotPlayer界面，即可完成导入直播源。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[个人简介]]></title>
-        <id>https://Iseulf.github.io/post/zhu-ye/</id>
-        <link href="https://Iseulf.github.io/post/zhu-ye/">
-        </link>
-        <updated>2020-06-22T12:20:59.000Z</updated>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>姓名</th>
-<th>所属单位</th>
-<th>职位</th>
-<th>从事专业</th>
-<th>联系方式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>方成峰</td>
-<td>中国科学技术大学</td>
-<td>大四学生</td>
-<td>微电子</td>
-<td>QQ:3291866467</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/">
+                  <h3 class="post-title">
+                    软件推荐---Listary Pro
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'ee2b68591db709317aa1',
+        clientSecret: '8e36d18e487deb56c42c9a8967b3ae3992504ff6',
+        repo: 'Iseulf.github.io',
+        owner: 'Iseulf',
+        admin: ['Iseulf'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
