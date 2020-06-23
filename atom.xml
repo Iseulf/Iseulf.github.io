@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-22T15:56:45.772Z</updated>
+    <updated>2020-06-23T04:51:49.536Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -26,7 +26,9 @@
         <link href="https://Iseulf.github.io/post/ruan-jian-tui-jian-potplayer/">
         </link>
         <updated>2020-06-22T13:09:22.000Z</updated>
-        <content type="html"><![CDATA[<p> PotPlayer是一款及其好用的视频播放器，支持各种视频格式，还支持导入直播源。</p>
+        <content type="html"><![CDATA[<p>  PotPlayer是一款及其好用的视频播放器，支持各种视频格式，还支持导入直播源。并且还可以调整倍速，速度最高可以调到10。<br>
+  下面是下载地址：<a href="https://seul.lanzous.com/b01bi6r3c">PotPlayer</a>  密码:9o1k。<br>
+  下载完成之后，双击exe文件，安装完成之后再解压直播源文件到桌面，再将里面的文件拖动到PotPlayer界面，即可完成导入直播源。</p>
 ]]></content>
     </entry>
     <entry>
