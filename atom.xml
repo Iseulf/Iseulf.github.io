@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-23T12:36:11.436Z</updated>
+    <updated>2020-06-24T09:39:22.564Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://Iseulf.github.io/images/avatar.png</logo>
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Iseulf</rights>
+    <entry>
+        <title type="html"><![CDATA[App推荐---阅读3.0]]></title>
+        <id>https://Iseulf.github.io/post/app-tui-jian-yue-du-30/</id>
+        <link href="https://Iseulf.github.io/post/app-tui-jian-yue-du-30/">
+        </link>
+        <updated>2020-06-24T09:10:59.000Z</updated>
+        <content type="html"><![CDATA[<div align=center><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/Screenshot_20200624_173109_io.legado.app.release.jpg" width=30%></div>
+<center style="font-size:14px;color:#C0C0C0;text-decoration:uderline">App订阅部分界面图</center>
+<p>  手机阅读类的软件有很多：微信阅读、静读天下等等，等有时间我会做一个它们之间的比较。但今天要介绍的app，个人感觉应该是同类app里的佼佼者了。<br>
+  阅读3.0采用自定义书源的方式来获取书籍，这也给该app带来了无限的资源，关于书源大家也不用担心，我会在文末与软件一起附上一份书源合集。若仅仅是这样，还不足以成为佼佼者，毕竟另一款app搜书大师也有同类功能。我如此推荐这款app的原因是因为它较它的前身增加了RSS订阅源的功能，很多人可能并不知道RSS是什么，简单来说RSS就相对于一份报纸，你可以通过阅读RSS来获取你所像关注的信息。同样也会在文末给大家附上RSS订阅源合集，下载完成之后通过本地导入即可。<br>
+下载链接：<a href="https://seul.lanzous.com/i5poUdzy0na">阅读3.0合集</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown基本语法]]></title>
         <id>https://Iseulf.github.io/post/markdown-ji-ben-yu-fa/</id>
