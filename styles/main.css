@@ -2191,29 +2191,29 @@ body {
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
     }.markdownIt-TOC a {
-      color: #eee;
-      border-bottom-color: #eee;
+      color: #adb5bd;
+      border-bottom-color: #adb5bd;
     }.markdownIt-TOC a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #ffc9c9;
+      border-bottom-color: #ffc9c9;
     }.active-current > a {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #e03131 !important;
+      border-bottom-color: #e03131 !important;
     }
     .sidebar-title-active {
-      color: #fc6423 !important;
-      border-bottom-color: #fc6423 !important;
+      color: #e03131;
+      border-bottom-color: #e03131;
     }
     .sidebar-title-item:hover {
-      color: #fc6423 !important;
+      color: #e03131 !important;
     }
     .active-show > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #e03131;
+      border-bottom-color: #e03131;
     }
     .active-hidden > a {
-      color: #fc6423;
-      border-bottom-color: #fc6423;
+      color: #e03131;
+      border-bottom-color: #e03131;
     }.bg-color {
       background-color: #fffffffe;
     }
@@ -2233,8 +2233,6 @@ body {
       background: #FFFFFFfe;
     }.box-scale > #landlord {
       transform: scale(0.5);
-    }.box-shadow-wrapper {
-      padding: 10px;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {

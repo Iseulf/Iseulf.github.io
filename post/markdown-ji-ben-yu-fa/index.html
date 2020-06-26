@@ -9,19 +9,19 @@
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
 <title>Markdown基本语法 | Iseulf</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1593189070145">
-<link rel="stylesheet" href="/media/css/gemini.css">
-<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593192969694">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/androidstudio.css"
+<link href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/hljs/styles/androidstudio.css"
   rel="stylesheet">
 
-<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/styles/main.css">
 
-<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/hljs/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
@@ -36,6 +36,16 @@
 
 
 
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?f2611550056f39b985ab0eb90c5961ef";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 
 
   <meta name="description" content="Markdown基本语法" />
@@ -181,7 +191,7 @@
               
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/images/avatar.png"/>
     <p class="site-author-name">一个默默无名的帅哥</p>
     
     <div class="site-description right-motion">
@@ -241,7 +251,7 @@
 
   <div style="width: 100%; position: relative;">
     <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
-    <script src="/media/js/magic/clock.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/js/magic/clock.js"></script>
   </div>
 
 </div>
@@ -586,6 +596,14 @@
       <span>755<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
+    
+    
+    <span id="/post/markdown-ji-ben-yu-fa/" data-flag-title="Markdown基本语法" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
@@ -727,6 +745,10 @@ A<sup>这是上标</sup></p>
 
             </div>
             
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
             
               <div class="post-footer">
   <ul class="post-copyright">
@@ -767,28 +789,54 @@ A<sup>这是上标</sup></p>
 </div>
             
             
-  
-    
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
 
-<div id="gitalk-container"></div>
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/avatar.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
 
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
 <script>
-  var gitalk = new Gitalk({
-    clientID: 'ee2b68591db709317aa1',
-    clientSecret: '8e36d18e487deb56c42c9a8967b3ae3992504ff6',
-    repo: 'Iseulf.github.io',
-    owner: 'Iseulf',
-    admin: ['Iseulf'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
+  new Valine({
+    el: '#vcomments',
+    appId: '03ywsXkT24gOuOjggDVmS4r8-gzGzoHsz',
+    appKey: 'otfNpti4WC34tVmiE2nxcvUL',
+    avatar: 'mp',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'false',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
 </script>
-    
-    
-  
 
           </div>
         </div>
@@ -824,7 +872,7 @@ A<sup>这是上标</sup></p>
   
   
   
-<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/live2d/css/live2d.css" />
 <div class="box-scale">
   <div id="landlord" style="left: 1100px;bottom: px;"
     data-key="">
@@ -865,7 +913,7 @@ A<sup>这是上标</sup></p>
   let landlord = document.querySelector('#landlord');
   var apiKey = landlord.dataset.key;
 </script>
-<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/live2d/js/live2d.js"></script>
 <script>
 	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
 	var userAgent = window.navigator.userAgent.toLowerCase();
@@ -1534,7 +1582,7 @@ A<sup>这是上标</sup></p>
   }
 
   // 链接跳转
-  let newWindow = 'false'
+  let newWindow = 'true'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -1606,6 +1654,8 @@ A<sup>这是上标</sup></p>
           
           
           
+            <img id="wx" class="reward-img" src="\media\images\custom-wxImg.png" alt="赞赏码">
+          
         </div>
       </div>
       <p class="reward-word">扫码打赏，你说多少就多少</p>
@@ -1613,6 +1663,10 @@ A<sup>这是上标</sup></p>
     </div>
     <div class="bottom">
       
+      
+      <div id="wxBtn" class="pay-text">
+        微信支付
+      </div>
       
     </div>
   </div>
@@ -2311,12 +2365,12 @@ A&lt;sup&gt;这是上标&lt;/sup&gt;&lt;/p&gt;
   })
 
 </script>
-<script src="/media/js/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/js/motion.js"></script>
 
 
 <script src="/media/js/mouse/peace.js"></script>
 
 
-<script src="/media/js/cool.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/js/cool.js"></script>
 
 </html>
