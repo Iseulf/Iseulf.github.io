@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://Iseulf.github.io//favicon.ico?v=1593092214785">
+<link rel="shortcut icon" href="https://Iseulf.github.io//favicon.ico?v=1593167087204">
 <link rel="stylesheet" href="https://Iseulf.github.io//styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://Iseulf.github.io/">
-        <img src="https://Iseulf.github.io//images/avatar.png?v=1593092214785" class="site-logo">
+        <img src="https://Iseulf.github.io//images/avatar.png?v=1593167087204" class="site-logo">
         <h1 class="site-title">Iseulf</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -101,12 +101,51 @@
             <div class="post-content" v-pre>
               <p>  <strong><code>Markdown是一门用于简化排版的工具，它相对于Word具有公式输入简单化的优点；而对于Latex有具有语法简单的特点，所以对于理工科等需要大量输入公式，但对排版要求不太高的学生和程序员十分适用。</code></strong><br>
   下面就简单介绍一下Markdown的基本语法。</p>
-<h2 id="1-标题">1、标题</h2>
+<h2 id="一-标题">一、标题</h2>
+<h3 id="1-层次标题">1、层次标题</h3>
 <p>  Markdown总共可以划分六个层次的标题，从一级到六级采用一个到六个#来表示，如：</p>
 <pre><code class="language-markdown">### 三级标题
 </code></pre>
 <h3 id="三级标题">三级标题</h3>
-<h2 id="2-公式的输入">2、公式的输入</h2>
+<h3 id="2-平行标题">2、平行标题</h3>
+<p>  平行标题分为有序号和无序号两种。</p>
+<h4 id="有序号">有序号</h4>
+<p>  有序号的标题输入格式为：</p>
+<pre><code class="language-markdown">1. 
+2. 
+</code></pre>
+<ol>
+<li></li>
+<li></li>
+</ol>
+<h4 id="无序号">无序号</h4>
+<p>  无序号的标题有多种输入方式，‘+’、‘-’、‘*’+space都可以。</p>
+<pre><code class="language-markdown">+ 
+- 
+* 
+</code></pre>
+<ul>
+<li></li>
+</ul>
+<ul>
+<li></li>
+</ul>
+<ul>
+<li></li>
+</ul>
+<h4 id="无序号的叠加">无序号的叠加</h4>
+<p>  无序号的标题可以叠加，如：</p>
+<pre><code class="language-markdown">+ 
+    - 
+</code></pre>
+<ul>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="二-公式的输入">二、公式的输入</h2>
 <p>  Markdown支持Latex模式输入公式，有行间插入和居中插入两种模式。如：</p>
 <pre><code class="language-markdown">$a^2+b^2=c^2$
 $$
@@ -116,7 +155,7 @@ $$
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mn>1</mn><mi>a</mi></mfrac><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{1}{a}=v^2-1
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.9474379999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></span></p>
-<h2 id="3-代码块">3、代码块</h2>
+<h2 id="三-代码块">三、代码块</h2>
 <p>Markdown支持多种语言的输入，语法格式为<br>
 <code>```语言名 代码区 ```</code><br>
 如：</p>
@@ -125,8 +164,9 @@ print('hello world')
 </code></pre>
 <pre><code class="language-python">print('hello world')
 </code></pre>
-<h2 id="4-字体的颜色-大小">4、字体的颜色、大小</h2>
-<p>  Markdown本身并没有特地的语法去调整字体，但它兼容了Html的语法。</p>
+<h2 id="四-字体">四、字体</h2>
+<h3 id="1-字体的颜色与大小">1、字体的颜色与大小</h3>
+<p>  Markdown本身并没有特地的语法去调整字体的颜色与大小，但它兼容了Html的语法。</p>
 <pre><code class="language-markdown">&lt;font color=red&gt;这是调整颜色&lt;/font&gt;
 &lt;font size=10&gt;这是调整尺寸&lt;/font&gt;
 &lt;center&gt;这是居中&lt;/center&gt;
@@ -136,7 +176,15 @@ print('hello world')
 <font size=10>这是调整尺寸</font></p>
 <center>这是居中</center>
 <font face="逐浪立楷">这是调整字体</font>
-<h2 id="5-图片和超链接的插入">5、图片和超链接的插入</h2>
+<h3 id="2-字体的类型">2、字体的类型</h3>
+<pre><code class="language-markdown">*这是斜体*
+**这是粗体**
+~~这是加删除线~~
+</code></pre>
+<p><em>这是斜体</em><br>
+<strong>这是粗体</strong><br>
+<s>这是加删除线</s></p>
+<h2 id="五-图片和超链接的插入">五、图片和超链接的插入</h2>
 <p>  图片和超链接原本的插入方法十分简单(下表中的中括号与小括号间应该没有空格，但为了防止错误识别故加了一个)</p>
 <table>
 <thead>
@@ -152,6 +200,39 @@ print('hello world')
 </tr>
 </tbody>
 </table>
+<h2 id="六-分割线与引用">六、分割线与引用</h2>
+<p>  引用可以把文字加上一个框以示与正文的区别。</p>
+<pre><code class="language-markdown">&gt; 这是引用
+</code></pre>
+<blockquote>
+<p>这是引用<br>
+  分割线就是加一道分割线。</p>
+</blockquote>
+<pre><code class="language-markdown">--- 
+***
+__________
+********
+</code></pre>
+<p>以上的效果都如下：</p>
+<hr>
+<h2 id="七-各种小语法">七、各种小语法</h2>
+<h3 id="1-空格符">1、空格符</h3>
+<p>  Markdown语法中并没有空格，要手动插入空格符:</p>
+<pre><code class="language-markdown">&amp;emsp;&amp;emsp;这是两个空格符
+</code></pre>
+<p>  这是两个空格符</p>
+<h3 id="2-上下标">2、上下标</h3>
+<p>  Markdown本身语法自带有上下标，但也可以使用公式插入里的latex语法实现。</p>
+<pre><code class="language-markdown">A~这是下标~
+A^这是上标^
+</code></pre>
+<p>A<sub>这是下标</sub><br>
+A<sup>这是上标</sup></p>
+<h3 id="3-内容目录">3、内容目录</h3>
+<p>  Markdown有根据标题自动生成目录的功能，即为：</p>
+<pre><code class="language-markdown">[TOC]
+</code></pre>
+<p>  <em>PS:我所使用的编译器不支持这个功能，在此可以推荐Typora</em></p>
 
             </div>
             
