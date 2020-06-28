@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-28T09:46:40.402Z</updated>
+    <updated>2020-06-28T09:52:55.122Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -22,8 +22,8 @@
   下载完之后首先要配置中文<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>，按以下步骤配置：</p>
 <div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200628171041.png" width=50%></div>
 <div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200628171456.png" width=50%></div>
-安装完成之后即可。
-&emsp;&emsp;完成之后再在插件商店搜索*Markdown All in One*[^4]和*Marp for VS Code*[^5]，安装完成之后我们就可以开始写PPT了。
+<p>安装完成之后即可。<br>
+  完成之后再在插件商店搜索<em>Markdown All in One</em><sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>和<em>Marp for VS Code</em><sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>，安装完成之后我们就可以开始写PPT了。</p>
 <h2 id="二-实例">二、实例</h2>
 <div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200628172449.png" width=80%></div>
 <p>  上图是一个例子，左边是代码右边是输出样式。首先第一段代码</p>
@@ -56,6 +56,10 @@ paginate: ture
 <li id="fn2" class="footnote-item"><p>VScode是一款开源的文本编辑器，借助其内置的插件生态可以实现各种语言的完整功能。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p>英语大神请忽略。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>可以让你写Markdown更加容易。 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>用于写PPT <a href="#fnref5" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
