@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-27T15:05:47.424Z</updated>
+    <updated>2020-06-28T09:42:02.556Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -10,6 +10,57 @@
     <logo>https://Iseulf.github.io/images/avatar.png</logo>
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Iseulf</rights>
+    <entry>
+        <title type="html"><![CDATA[用VScode写Markdown式PPT]]></title>
+        <id>https://Iseulf.github.io/post/yong-vscode-xie-markdown-shi-ppt/</id>
+        <link href="https://Iseulf.github.io/post/yong-vscode-xie-markdown-shi-ppt/">
+        </link>
+        <updated>2020-06-28T08:49:42.000Z</updated>
+        <content type="html"><![CDATA[<p>  PPT应该是每个人所必须的技能点了吧，但office版本的PPT就插入公式来说对理工科学生并不友好，而且感觉花里胡哨的东西也比较多<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。对我而言还是比较喜欢Markdown那种简单高效的排版方式。本文就是用来介绍如何使用VScode写出Markdown式的PPT。<!--more--></p>
+<h2 id="一-准备">一、准备</h2>
+<p>  首先要下载一个VScode<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>，建议大家去<a href="https://code.visualstudio.com/">VScode官网</a>。<br>
+  下载完之后首先要配置中文<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>，按以下步骤配置：</p>
+<div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200628171041.png" width=50%></div>
+<div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200628171456.png" width=50%></div>
+安装完成之后即可。
+&emsp;&emsp;完成之后再在插件商店搜索*Markdown All in One*[^4]和*Marp for VS Code*[^5]，安装完成之后我们就可以开始写PPT了。
+<h2 id="二-实例">二、实例</h2>
+<div align="center"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200628172449.png" width=80%></div>
+<p>  上图是一个例子，左边是代码右边是输出样式。首先第一段代码</p>
+<pre><code class="language-markdown">---
+marp: true 
+:表明接下来的代码采用marp方式编译
+theme: gaia
+:选择gaia主题
+class: 
+paginate: ture
+:是否标注页码
+</code></pre>
+<p>  接下来就是左右两边一一对应了，其中的背景调整</p>
+<pre><code class="language-markdown">![bg](#DCDCDC)
+</code></pre>
+<p>  括号里可以插入图片链接，也可以和实例一样写颜色像#DCDCDC就表示灰色。<br>
+  而Marp的分页操作是通过---切割来实现的</p>
+<pre><code class="language-markdown">---
+这是一页
+---
+这是另一页
+---
+</code></pre>
+<p>  marp本身支持大部分Markdown语法。更多Marp相关请访问<a href="https://marp.app/blog/the-story-of-marp-next">Marp官网</a>。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>就我个人而言。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>VScode是一款开源的文本编辑器，借助其内置的插件生态可以实现各种语言的完整功能。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>英语大神请忽略。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[APP推荐---Z直播]]></title>
         <id>https://Iseulf.github.io/post/app-tui-jian-z-zhi-bo/</id>
