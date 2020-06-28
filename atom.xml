@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-28T09:42:02.556Z</updated>
+    <updated>2020-06-28T09:46:40.402Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -67,8 +67,7 @@ paginate: ture
         <link href="https://Iseulf.github.io/post/app-tui-jian-z-zhi-bo/">
         </link>
         <updated>2020-06-27T11:25:15.000Z</updated>
-        <content type="html"><![CDATA[<p>  随着互联网技术的发展，越来越多人选择在家娱乐，这也导致了直播行业的快速发展，同样也催生出了多家直播平台竞争的场面。<br>
-  那么问题就来了，想看的主播不在一个平台怎么办？难道要为了看个直播同时下载好几个直播平台吗？这显然不符合我追求简洁的人生信条。这时一款APP进入了我的视野---z直播。<br>
+        <content type="html"><![CDATA[<p>  随着互联网技术的发展，越来越多人选择在家娱乐，这也导致了直播行业的快速发展，同样也催生出了多家直播平台竞争的场面。那么问题就来了，想看的主播不在一个平台怎么办？难道要为了看个直播同时下载好几个直播平台吗？这显然不符合我追求简洁的人生信条。这时一款APP进入了我的视野---z直播。<!--more--><br>
   z直播是一款聚合多个直播平台的app，在这里你可以同时观看来自不同直播平台的主播，同时支持关注收藏，界面十分简洁，但该有的功能全部都有。最优秀的是，它支持和原平台同样的清晰度，比如你在斗鱼app里可以看蓝光在这里同样可以。弹幕也可以同步，但不支持发送弹幕，这也是我觉得这个app唯一的缺点了。</p>
 <center class="half">
     <img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/Screenshot_20200627_193228_com.linroid.zlive.jpg" width="200"/><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/Screenshot_20200627_193219_com.linroid.zlive.jpg" width="200" />
