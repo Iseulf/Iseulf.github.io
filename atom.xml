@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-29T13:47:22.401Z</updated>
+    <updated>2020-06-29T13:53:54.796Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -504,34 +504,6 @@ $a^1$
         <content type="html"><![CDATA[<p>  PotPlayer是一款及其好用的视频播放器，支持各种视频格式，还支持导入直播源。并且还可以调整倍速，速度最高可以调到10。<br>
   下面是下载地址：<a href="https://seul.lanzous.com/b01bi6r3c">PotPlayer</a>  密码:9o1k。<br>
   下载完成之后，双击exe文件，安装完成之后再解压直播源文件到桌面，再将里面的文件拖动到PotPlayer界面，即可完成导入直播源。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[个人简介]]></title>
-        <id>https://Iseulf.github.io/post/zhu-ye/</id>
-        <link href="https://Iseulf.github.io/post/zhu-ye/">
-        </link>
-        <updated>2020-06-22T12:20:59.000Z</updated>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>姓名</th>
-<th>所属单位</th>
-<th>职位</th>
-<th>从事专业</th>
-<th>联系方式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>方成峰</td>
-<td>中国科学技术大学</td>
-<td>大四学生</td>
-<td>微电子</td>
-<td>QQ:3291866467</td>
-</tr>
-</tbody>
-</table>
 ]]></content>
     </entry>
 </feed>
