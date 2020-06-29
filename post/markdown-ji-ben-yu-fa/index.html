@@ -9,7 +9,7 @@
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
 <title>Markdown基本语法 | Iseulf</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593352983752">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593438006844">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -219,7 +219,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">8</span>
+        <span class="site-item-stat-count">9</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -1985,6 +1985,129 @@ $a^1$
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://Iseulf.github.io/post/huo-hu-liu-lan-qi-de-yi-xie-she-zhi/"" data-c="
+          &lt;p&gt;  最近由于长时间使用新版Edge和Chrome导致了对于Chromium内核的厌倦，于是想换换口味，就下载了一个火狐，从下载到调教也踩了一些坑，在这里就说明一下，防止二次踩坑。&lt;!--more--&gt;&lt;/p&gt;
+&lt;h2 id=&#34;一-下载&#34;&gt;一、下载&lt;/h2&gt;
+&lt;p&gt;  火狐的下载就有一个坑：国际版和国内版。众所周知，在中国一个软件的国内版一般都很流氓，火狐也是如此。国内版的火狐主页就流氓，被换成了“火狐主页”，并且火狐的其它特色服务也会有阉割，所以还是下载国际版好。国际版网址是：https://www.mozilla.org/zh-CN/firefox/new/，建议架梯子下载，用国内网好像会被重定向到国内版：https://www.firefox.com.cn/。这里也给出一个网盘下载地址吧：https://seul.lanzous.com/i4tUpe5i5pc。&lt;/p&gt;
+&lt;h2 id=&#34;二-设置&#34;&gt;二、设置&lt;/h2&gt;
+&lt;p&gt;  火狐浏览器自定义功能较Chromium来说会多很多&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;。这里罗列出一些&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn2&#34; id=&#34;fnref2&#34;&gt;[2]&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;不在当前标签页打开书签
+browser.tabs.loadBookmarksInTabs
+改为 true
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+新标签页打开链接,而不是窗口
+browser.link.open_newwindow.restriction
+改为 0
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+新标签页打开地址栏
+browser.urlbar.openintab
+改为 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+新标签页打开搜索栏
+browser.search.openintab
+改为 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+关闭最后一个标签页的时候同时关闭浏览器
+browser.tabs.closeWindowWithLastTab
+改为 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+双击关闭标签
+browser.tabs.closeTabByDblclick
+改为 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+中键书签前台打开
+browser.tabs.loadBookmarksInBackground
+改为 false
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+后台页面打开外部链接
+browser.tabs.loadDivertedInBackground
+改为 ture
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+中键点击不关闭书签菜单
+browser.bookmarks.openInTabClosesMenu
+改为 false
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+支持新的用户脚本 WE API
+extensions.webextensions.userScripts.enabled
+改成 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+禁用 pocket
+extensions.pocket.enabled
+改成 false
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+给Firefox设置远程DNS解析，破解DNS劫持与污染
+network.proxy.socks_remote_dns
+改为 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+紧邻当前标签新建标签页
+browser.tabs.insertAfterCurrent
+改为 true
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+破解右键限制
+dom.event.contextmenu.enabled
+改为 false
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+browser.urlbar.trimURLs
+默认是true，效果是自动隐藏地址栏中的http(s)://等协议名称
+如果不喜欢隐藏，改为false即可。
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+取消标签动画
+toolkit.cosmeticAnimations.enabled
+改为 false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;三-扩展&#34;&gt;三、扩展&lt;/h2&gt;
+&lt;p&gt;  和Chrome一样，火狐也有自己的扩展商店，虽然扩展数目没有Chrome那么多，但日常需要的也基本都有了。大家可以根据自己的需要去下载。&lt;br&gt;
+  这里就着重推荐一个超级棒的扩展---Infinity，这是个自定义首页的扩展，颜值超高。并且最重要的是它支持跨浏览器同步&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn3&#34; id=&#34;fnref3&#34;&gt;[3]&lt;/a&gt;&lt;/sup&gt;，这就相当于说它可以做一个跨浏览器的书签同步器&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn4&#34; id=&#34;fnref4&#34;&gt;[4]&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;&lt;img src=&#34;https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/20200629213643.png&#34; width=50%&gt;&lt;/div&gt;
+&lt;center style=&#34;font-size:14px;color:#C0C0C0;text-decoration:underline&#34;&gt;软件效果图&lt;/center&gt;
+&lt;hr class=&#34;footnotes-sep&#34;&gt;
+&lt;section class=&#34;footnotes&#34;&gt;
+&lt;ol class=&#34;footnotes-list&#34;&gt;
+&lt;li id=&#34;fn1&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;为火狐👏 &lt;a href=&#34;#fnref1&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn2&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;引自&lt;a href=&#34;https://www.jianshu.com/p/1814e0594086&#34;&gt;简书&lt;/a&gt; &lt;a href=&#34;#fnref2&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn3&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;因为主流扩展商店里都有这个扩展 &lt;a href=&#34;#fnref3&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn4&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;因为它支持在首页添加自定义网址。 &lt;a href=&#34;#fnref4&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+">火狐浏览器的一些设置</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://Iseulf.github.io/post/yong-vscode-xie-markdown-shi-ppt/"" data-c="
