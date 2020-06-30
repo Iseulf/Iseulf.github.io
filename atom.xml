@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-06-29T13:57:16.011Z</updated>
+    <updated>2020-06-30T13:19:39.606Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://Iseulf.github.io/images/avatar.png</logo>
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Iseulf</rights>
+    <entry>
+        <title type="html"><![CDATA[软件合集]]></title>
+        <id>https://Iseulf.github.io/post/ruan-jian-he-ji/</id>
+        <link href="https://Iseulf.github.io/post/ruan-jian-he-ji/">
+        </link>
+        <updated>2020-06-30T12:41:37.000Z</updated>
+        <content type="html"><![CDATA[<p>  我准备将所有软件推荐都整合到这篇文章中，文章可能会有点长而且会持续更新的。<!--more--></p>
+<h2 id="一-浏览器">一、浏览器</h2>
+<h3 id="1-新版edge">1、新版Edge</h3>
+<p>  chrome的一家独大充分说明了Blink内核的优秀，而且由于chromium遵循的开源协议允许闭源，致使微软选择改版Edge，使其使用Blink内核。不得不说，这使Edge浏览器从下载别的浏览器的工具一跃成为了浏览器界有力的竞争者。<br>
+  由于采用了chrome相同的内核，新版Edge兼容chrome插件商店里的大部分插件，而且Edge也建立了自己的插件商店，插件数量也在逐步增多，最重要的是Edge网上商店不需要翻墙。而且对比chrome，Edge由于是亲儿子，更加贴合Windows系统，占用内存也更少，且Windows在最新的更新中已经内置了新版Edge。<br>
+  新版Edge浏览器下载网址为：<a href="https://www.microsoft.com/en-us/edge">Edge下载</a>。下载完成之后可以在Edge扩展商店安装一个谷歌上网助手(需注册)或集装箱(不需注册)，即可愉快地使用谷歌了。</p>
+<h3 id="2-chrome">2、chrome</h3>
+<p>  chrome取代IE成为浏览器的绝对霸主自然有其独到之处，作为市场占有率接近70%的存在，chrome有着最为完善的插件生态和较好的浏览体验。<a href="https://www.google.com/intl/zh-CN/chrome/">chrome下载地址</a>。<br>
+  chrome浏览器不同于Edge，其插件商店需要翻墙才可浏览，这里可以按照<a href="https://zhuanlan.zhihu.com/p/138167691">安装上网助手地方法</a>操作。</p>
+<h3 id="3-firefox">3、Firefox</h3>
+<p>  火狐浏览器作为Edge改版之前浏览器界地二把手，且其使用了不同于谷歌的Gecko内核，自然有其过人之处。更为优秀的隐私保护，pocket、FirefoxSend等优质的集成服务都使得火狐在浏览器中那么的与众不同<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。<br>
+  火狐浏览器也有自己的扩展商店，且其生态也很完善。下载火狐一定要下载国际版：https://www.mozilla.org/zh-CN/firefox/new/。有关火狐浏览器更多的设置请见博客里的另一篇文章:<a href="https://iseulf.github.io/post/huo-hu-liu-lan-qi-de-yi-xie-she-zhi/">Firefox的设置</a>。</p>
+<h2 id="二-视频播放器">二、视频播放器</h2>
+<h3 id="1-potplayer">1、PotPlayer</h3>
+<p>  </p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>而且我感觉火狐的图标是三大浏览器中最好看的。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[火狐浏览器的一些设置]]></title>
         <id>https://Iseulf.github.io/post/huo-hu-liu-lan-qi-de-yi-xie-she-zhi/</id>
