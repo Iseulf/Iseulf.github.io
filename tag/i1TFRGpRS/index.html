@@ -9,7 +9,7 @@
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
 <title>Iseulf</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593590251805">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593870304392">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -214,19 +214,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">9</span>
+        <span class="site-item-stat-count">10</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">7</span>
+        <span class="site-item-stat-count">8</span>
         <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">7</span>
+        <span class="site-item-stat-count">8</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -290,6 +290,23 @@
           <small class="language" data-lan="tag">标签</small>
         </h2>
       </div>
+      
+      
+      
+      
+      
+      <a href="https://Iseulf.github.io/post/kotlin-bi-ji/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              07-04
+              <small>Kotlin笔记</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
       
       
       
@@ -1146,6 +1163,83 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://Iseulf.github.io/post/kotlin-bi-ji/"" data-c="
+          &lt;p&gt;  最近报了一个“大创”[^1]项目，需要开发一个app，所以有了学习Android程序开发的必要，自己的话也是很早就想学了，但一直懒，耽误了。&lt;!--more--&gt;&lt;/p&gt;
+&lt;h2 id=&#34;一-变量和函数&#34;&gt;一、变量和函数&lt;/h2&gt;
+&lt;p&gt;  每门语言的基础都是其变量与函数。Kotlin的变量类型和其它语言基本一致，有Int,String,Long等。但与其它诸如C、Java语言不同的是，Kotlin完全抛弃了基本变量类型，也就是说这里的Int、Long等都是类，这也是它们首字母大写的原因。&lt;br&gt;
+  与Java的另一个不同则是，Kotlin再申明变量时并不需要显式地指明变量的类型，只需要采用val/var来说明变量是可改变/不可改变的即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun main(){
+    val a=10
+    var b:Int=10
+    b=b+10
+    println(&amp;quot;a=&amp;quot;+a+&amp;quot; b+10=&amp;quot;+b)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;a=10 b+10=20&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上述代码又引出了函数和输出的概念。Kotlin的函数采用关键字&lt;mark&gt;fun&lt;/mark&gt;来定义，而输出则是&lt;mark&gt;println&lt;/mark&gt;函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun lagerNumber(Num1:Int,Num2:Int):Int{
+    if (Num1&amp;gt;=Num2){
+        return Num1
+    }
+    else{
+        return Num2
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面就是一个函数的标准写法例子，参数按&lt;mark&gt;参数名:参数类型&lt;/mark&gt;传递，如果函数有返回值则采用==:类型名==来指定。&lt;/p&gt;
+&lt;h2 id=&#34;二-条件语句&#34;&gt;二、条件语句&lt;/h2&gt;
+&lt;p&gt;  Kotlin有两种类型的条件语句：if和when。&lt;/p&gt;
+&lt;h3 id=&#34;1-if&#34;&gt;1、if&lt;/h3&gt;
+&lt;p&gt;  Kotlin的if语句和其他语言的基本一致，但它可以存在返回值--最后执行的语句的值。例如上面的函数可以写成&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun lagerNumber(Num1:Int,Num2:Int):Int{
+    return if (Num1&amp;gt;=Num2)Num1 else Num2
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;且这个函数还可以简化为&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun lagerNumber(Num1:Int,Num2:Int)=if (Num1&amp;gt;=Num2)Num1 else Num2
+### 2、when
+&amp;amp;emsp;&amp;amp;emsp;when其实有点像C语言里的switch语句，但它远比switch语句强大。
+```kotlin
+fun getScore(name:String):Int{
+    when(name){
+        &amp;quot;John&amp;quot;-&amp;gt;97
+        &amp;quot;Peter&amp;quot;-&amp;gt;99
+        &amp;quot;Mark&amp;quot;-&amp;gt;88
+        &amp;quot;Jack&amp;quot;-&amp;gt;89
+        &amp;quot;Ketty&amp;quot;-&amp;gt;94
+        else-&amp;gt;85
+    }
+}
+fun main(){
+    getScore(&amp;quot;Ketty&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;94&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;when与switch不同，它不需要加break，完成一个条件后会自动跳出。且when还可以判断是否属于一个类&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun Judge(number:Number){
+    when(number){
+        is Int-&amp;gt;println(&amp;quot;Int&amp;quot;)
+        is Long-&amp;gt;println(&amp;quot;Long&amp;quot;)
+        else-&amp;gt;println(&amp;quot;unknown&amp;quot;)
+    }
+}
+fun main(){
+    val a=12L
+    Judge(a)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Long&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Number是一个大类，Int、Long、Double都是它的子类。&lt;/p&gt;
+">Kotlin笔记</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://Iseulf.github.io/post/ruan-jian-he-ji/"" data-c="

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-07-01T07:57:37.043Z</updated>
+    <updated>2020-07-04T13:45:10.012Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -10,6 +10,86 @@
     <logo>https://Iseulf.github.io/images/avatar.png</logo>
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Iseulf</rights>
+    <entry>
+        <title type="html"><![CDATA[Kotlin笔记]]></title>
+        <id>https://Iseulf.github.io/post/kotlin-bi-ji/</id>
+        <link href="https://Iseulf.github.io/post/kotlin-bi-ji/">
+        </link>
+        <updated>2020-07-04T13:06:08.000Z</updated>
+        <content type="html"><![CDATA[<p>  最近报了一个“大创”[^1]项目，需要开发一个app，所以有了学习Android程序开发的必要，自己的话也是很早就想学了，但一直懒，耽误了。<!--more--></p>
+<h2 id="一-变量和函数">一、变量和函数</h2>
+<p>  每门语言的基础都是其变量与函数。Kotlin的变量类型和其它语言基本一致，有Int,String,Long等。但与其它诸如C、Java语言不同的是，Kotlin完全抛弃了基本变量类型，也就是说这里的Int、Long等都是类，这也是它们首字母大写的原因。<br>
+  与Java的另一个不同则是，Kotlin再申明变量时并不需要显式地指明变量的类型，只需要采用val/var来说明变量是可改变/不可改变的即可。</p>
+<pre><code class="language-kotlin">fun main(){
+    val a=10
+    var b:Int=10
+    b=b+10
+    println(&quot;a=&quot;+a+&quot; b+10=&quot;+b)
+}
+</code></pre>
+<blockquote>
+<p><em>a=10 b+10=20</em></p>
+</blockquote>
+<p>上述代码又引出了函数和输出的概念。Kotlin的函数采用关键字<mark>fun</mark>来定义，而输出则是<mark>println</mark>函数。</p>
+<pre><code class="language-kotlin">fun lagerNumber(Num1:Int,Num2:Int):Int{
+    if (Num1&gt;=Num2){
+        return Num1
+    }
+    else{
+        return Num2
+    }
+}
+</code></pre>
+<p>上面就是一个函数的标准写法例子，参数按<mark>参数名:参数类型</mark>传递，如果函数有返回值则采用==:类型名==来指定。</p>
+<h2 id="二-条件语句">二、条件语句</h2>
+<p>  Kotlin有两种类型的条件语句：if和when。</p>
+<h3 id="1-if">1、if</h3>
+<p>  Kotlin的if语句和其他语言的基本一致，但它可以存在返回值--最后执行的语句的值。例如上面的函数可以写成</p>
+<pre><code class="language-kotlin">fun lagerNumber(Num1:Int,Num2:Int):Int{
+    return if (Num1&gt;=Num2)Num1 else Num2
+}
+</code></pre>
+<p>且这个函数还可以简化为</p>
+<pre><code class="language-kotlin">fun lagerNumber(Num1:Int,Num2:Int)=if (Num1&gt;=Num2)Num1 else Num2
+### 2、when
+&amp;emsp;&amp;emsp;when其实有点像C语言里的switch语句，但它远比switch语句强大。
+```kotlin
+fun getScore(name:String):Int{
+    when(name){
+        &quot;John&quot;-&gt;97
+        &quot;Peter&quot;-&gt;99
+        &quot;Mark&quot;-&gt;88
+        &quot;Jack&quot;-&gt;89
+        &quot;Ketty&quot;-&gt;94
+        else-&gt;85
+    }
+}
+fun main(){
+    getScore(&quot;Ketty&quot;)
+}
+</code></pre>
+<blockquote>
+<p><em>94</em></p>
+</blockquote>
+<p>when与switch不同，它不需要加break，完成一个条件后会自动跳出。且when还可以判断是否属于一个类</p>
+<pre><code class="language-kotlin">fun Judge(number:Number){
+    when(number){
+        is Int-&gt;println(&quot;Int&quot;)
+        is Long-&gt;println(&quot;Long&quot;)
+        else-&gt;println(&quot;unknown&quot;)
+    }
+}
+fun main(){
+    val a=12L
+    Judge(a)
+}
+</code></pre>
+<blockquote>
+<p><em>Long</em></p>
+</blockquote>
+<p>Number是一个大类，Int、Long、Double都是它的子类。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[软件合集]]></title>
         <id>https://Iseulf.github.io/post/ruan-jian-he-ji/</id>
