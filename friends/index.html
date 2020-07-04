@@ -9,7 +9,7 @@
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
 <title>Iseulf</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593870304392">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593870701146">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -1190,10 +1190,11 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;且这个函数还可以简化为&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun lagerNumber(Num1:Int,Num2:Int)=if (Num1&amp;gt;=Num2)Num1 else Num2
-### 2、when
-&amp;amp;emsp;&amp;amp;emsp;when其实有点像C语言里的switch语句，但它远比switch语句强大。
-```kotlin
-fun getScore(name:String):Int{
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这是因为Kotlin里函数可以采用=来直接赋值，而且由于后面返回的值一定是Int，所以Kotlin可以智能判断函数返回值的类型，所以不需要指明返回值类型。&lt;/p&gt;
+&lt;h3 id=&#34;2-when&#34;&gt;2、when&lt;/h3&gt;
+&lt;p&gt;  when其实有点像C语言里的switch语句，但它远比switch语句强大。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun getScore(name:String):Int{
     when(name){
         &amp;quot;John&amp;quot;-&amp;gt;97
         &amp;quot;Peter&amp;quot;-&amp;gt;99
