@@ -9,7 +9,7 @@
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
 <title>Iseulf</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593871026384">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593953913184">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -1242,7 +1242,7 @@
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://Iseulf.github.io/post/kotlin-bi-ji/"" data-c="
-          &lt;p&gt;  最近报了一个“大创”[^1]项目，需要开发一个app，所以有了学习Android程序开发的必要，自己的话也是很早就想学了，但一直懒，耽误了。&lt;!--more--&gt;&lt;/p&gt;
+          &lt;p&gt;  最近报了一个“大创”&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn1&#34; id=&#34;fnref1&#34;&gt;[1]&lt;/a&gt;&lt;/sup&gt;项目，需要开发一个app，所以有了学习Android程序开发的必要，自己的话也是很早就想学了，但一直懒，耽误了。&lt;!--more--&gt;&lt;/p&gt;
 &lt;h2 id=&#34;一-变量和函数&#34;&gt;一、变量和函数&lt;/h2&gt;
 &lt;p&gt;  每门语言的基础都是其变量与函数。Kotlin的变量类型和其它语言基本一致，有Int,String,Long等。但与其它诸如C、Java语言不同的是，Kotlin完全抛弃了基本变量类型，也就是说这里的Int、Long等都是类，这也是它们首字母大写的原因。&lt;br&gt;
   与Java的另一个不同则是，Kotlin再申明变量时并不需要显式地指明变量的类型，只需要采用val/var来说明变量是可改变/不可改变的即可。&lt;/p&gt;
@@ -1315,6 +1315,96 @@ fun main(){
 &lt;p&gt;&lt;em&gt;Long&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Number是一个大类，Int、Long、Double都是它的子类。&lt;/p&gt;
+&lt;h2 id=&#34;三-类&#34;&gt;三、类&lt;/h2&gt;
+&lt;p&gt;  作为面向对象编程的关键，Kotlin怎么能少得了类呢。&lt;/p&gt;
+&lt;h3 id=&#34;1-类的申明&#34;&gt;1、类的申明&lt;/h3&gt;
+&lt;p&gt;  Kotlin采用关键字class来申明类&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;open class Person(val name:String,val age:Int){
+    fun eat(){
+        println(&amp;quot;$name is eating&amp;quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这就定义了一个名为Person&lt;sup class=&#34;footnote-ref&#34;&gt;&lt;a href=&#34;#fn2&#34; id=&#34;fnref2&#34;&gt;[2]&lt;/a&gt;&lt;/sup&gt;的类。&lt;br&gt;
+&lt;code&gt;open:代表该类可以被继承，否则默认是不可继承的。&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;括号里的参数是主构造函数，代表构造两个变量分别名为name和age，且以传进来的值进行初始化。&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;类里面是定义的函数，所有继承了该类的子类都会有该类的所有特征。&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun main(){
+    val p=Person(&amp;quot;Jack&amp;quot;,12)
+    println(&amp;quot;${p.name} is ${p.age} years old&amp;quot;)
+    p.eat()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Jack is 12 years old&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Jack is eating&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这里的&lt;code&gt;${}&lt;/code&gt;是Kotlin字符串里内嵌输出表达式的方法，如果是单个变量还可以省略&lt;code&gt;{}&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;2-类的继承&#34;&gt;2、类的继承&lt;/h3&gt;
+&lt;p&gt;  继承就是指新建一个类但这个类并不是从头开始建，而是通过继承某些类的特征，再添加自己的特征。比如现在要新建一个名为Student的类，该类肯定符合Person的特征，所以可以继承Person的特征。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;class Student(val sno:String,val grade:Int,name:String,age:Int):Person(name,age){
+    init{
+        println(&amp;quot;sno is $sno&amp;quot;)
+        println(&amp;quot;grade is $grade&amp;quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里定义了一个从Person继承的子类Student。&lt;br&gt;
+&lt;code&gt;继承关系通过Person前的冒号&#39;:&#39;表示&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;类里面的init表示主构造函数，也即创建该类时一定要执行的语句。&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;Student中的name,age变量不需要为其申明val或者var，因为它们是由父类所决定的&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun main(){
+    val s=Student(&amp;quot;SA1234&amp;quot;,1,&amp;quot;Jack&amp;quot;,12)
+    s.eat()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;sno is SA1234&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;grade is 1&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Jack is eating&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-函数形参的默认值&#34;&gt;3、函数形参的默认值&lt;/h3&gt;
+&lt;p&gt;  函数所传递的参数都是可以设置默认值的，只需要直接再定义的时候就赋值即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun person(val name:String=&amp;quot;Jack&amp;quot;,val age:Int){
+        println(&amp;quot;$name is eating&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如上，Person函数的name变量的默认值就设为了Jack，故你可以不传递这个参数而执行person函数，它的name值就为Jack。&lt;/p&gt;
+&lt;h2 id=&#34;四-接口&#34;&gt;四、接口&lt;/h2&gt;
+&lt;p&gt;  Kotlin是单继承语言，也就是一个类最多只能继承一个父类，但可以实现任意多个接口。&lt;br&gt;
+  接口采用关键字&lt;code&gt;interface&lt;/code&gt;定义&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;interface Study{
+    fun readBooks()
+    fun doHomework()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;接口就是一群抽象函数的集合，如果一个类继承了接口，就要实现该接口里定义的抽象函数。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;class Student(name:String,age:Int):Person(name,age),Study{
+    override fun readBooks(){
+        println(&amp;quot;$name is reading&amp;quot;)
+    }
+    override fun doHomework(){
+        println(&amp;quot;$name is doing homework&amp;quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里的Student就继承了Person和Study。&lt;br&gt;
+&lt;code&gt;关键字override用于重写接口里的函数，也可以来重写父类里的函数，同时接口里的函数允许默认实现&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun main(){
+    val s=Student(age=12,name=&amp;quot;Jack&amp;quot;)
+    s.readBooks()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;这里有一种新的参数传递方式，采用一一对应的方式，即可按照原函数或类的固有顺序。&lt;/code&gt;&lt;/p&gt;
+&lt;hr class=&#34;footnotes-sep&#34;&gt;
+&lt;section class=&#34;footnotes&#34;&gt;
+&lt;ol class=&#34;footnotes-list&#34;&gt;
+&lt;li id=&#34;fn1&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;大学生创新创业计划 &lt;a href=&#34;#fnref1&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn2&#34; class=&#34;footnote-item&#34;&gt;&lt;p&gt;类名最好首字母大写 &lt;a href=&#34;#fnref2&#34; class=&#34;footnote-backref&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 ">Kotlin笔记</a>
       </div>
       
