@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-07-05T13:14:35.184Z</updated>
+    <updated>2020-07-06T12:59:10.649Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://Iseulf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Iseulf</rights>
     <entry>
-        <title type="html"><![CDATA[Kotlin笔记]]></title>
+        <title type="html"><![CDATA[Kotlin简略笔记]]></title>
         <id>https://Iseulf.github.io/post/kotlin-bi-ji/</id>
         <link href="https://Iseulf.github.io/post/kotlin-bi-ji/">
         </link>
@@ -173,6 +173,47 @@ fun main(){
 <p><em>Jack is reading</em></p>
 </blockquote>
 <p><code>这里有一种新的参数传递方式，采用一一对应的方式，即可按照原函数或类的固有顺序。</code></p>
+<h2 id="五-集合">五、集合</h2>
+<p>  集合大致可分为三类：List,Set和Map。<br>
+  三种集合的创建方法都非常相似，以List为例</p>
+<pre><code class="language-kotlin">
+fun main(){
+    val list=listOf(&quot;Apple&quot;,&quot;Banana&quot;,&quot;Pear&quot;)
+    for (i in list){
+        println(i)
+    }
+}
+</code></pre>
+<blockquote>
+<p><em>Apple</em><br>
+<em>Banana</em><br>
+<em>Pear</em></p>
+</blockquote>
+<p><code>lisOf是kotlin的一个内置函数，用于初始化list。set和map对应的则是setOf和mapOf。但需要注意的是这样创建的集合是无法修改的，因为kotlin默认创建的变量会无法修改(必须要修改的除外)。若想创建可以修改的集合要对应换成mutableListOf()等</code><br>
+  对map要特殊一点，其它两种要添加新量只需使用*fruit.add()*式的函数。而map，则只需直接添加，如</p>
+<pre><code class="language-kotlin">fun main(){
+    var map=mutableListOf(&quot;Apple&quot; to 1,&quot;Banana&quot; to 2,&quot;Pear&quot; to 3)
+    map[&quot;Peach&quot;]=4
+    for((fruit,number) in map){
+        println(&quot;$fruit is $number&quot;)
+    }
+}
+</code></pre>
+<blockquote>
+<p><em>Apple is 1</em><br>
+<em>Banana is 2</em><br>
+<em>Pear is 3</em><br>
+<em>Peach is 4</em></p>
+</blockquote>
+<p><em>Ps:Set与List的具体区别见<a href="https://www.cnblogs.com/helloworldcode/p/12122072.html">Set与List</a></em></p>
+<h2 id="六-lambda编程">六、Lambda编程</h2>
+<p>  Lambda的基本语法结构为：</p>
+<center style="font-size:18px;color:red">{参数1:参数类型，参数名2:参数类型2->函数体}</center>
+最外一层是一个大括号，首先要申明函数列表，然后只需函数体，再将函数体的结果当作最后的值，可以当作参数传递给函数。
+<pre><code class="language-kotlin">val maxLengthFruit=list.maxBy({fruit:String-&gt;fruit.length})
+</code></pre>
+<p><code>这就是一个Lambda编程的例子。list是一个列表，而maxBy方法是将list里得元素一个个取出来，带入Lambda表达式中，再比较大小，取出最大者。</code><br>
+  在最后附上<a href="https://play.kotlinlang.org/byExample/overview">官方文档</a>和<a href="https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS4zLjcyIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5vcGVuIGNsYXNzIFBlcnNvbih2YWwgbmFtZTpTdHJpbmcsdmFsIGFnZTpJbnQpe1xuICAgIGZ1biBlYXQoKXtcbiAgICAgICAgcHJpbnRsbihuYW1lK1wiaXMgZWF0aW5nLkhlIGlzIFwiK2FnZStcInllYXJzIG9sZC5cIilcbiAgICB9XG59XG5jbGFzcyBTdHVkZW50KHZhbCBzbm86SW50LHZhbCBncmFkZTpJbnQsbmFtZTpTdHJpbmcsYWdlOkludCk6UGVyc29uKG5hbWUsYWdlKXtcbiAgICBpbml0e1xuICAgICAgICBwcmludGxuKFwiTmFtZTpcIituYW1lK1wiXFxuXCIpXG4gICAgXHRwcmludGxuKFwiU25vOlwiK3NubylcbiAgICAgICAgfVxufVxuZnVuIG1haW4oYXJnczogQXJyYXk8U3RyaW5nPikge1xuICAgIHZhbCBhPVN0dWRlbnQoMTIzNCwyLFwiUGV0ZXJcIiwxMilcbiAgICBhLmVhdCgpXG59In0=">网页程序运行端</a></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">

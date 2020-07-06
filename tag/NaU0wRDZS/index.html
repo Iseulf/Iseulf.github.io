@@ -9,7 +9,7 @@
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
 <title>Iseulf</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1593954848100">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1594040346285">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
 <link
@@ -1334,6 +1334,47 @@ fun main(){
 &lt;p&gt;&lt;em&gt;Jack is reading&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;这里有一种新的参数传递方式，采用一一对应的方式，即可按照原函数或类的固有顺序。&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;五-集合&#34;&gt;五、集合&lt;/h2&gt;
+&lt;p&gt;  集合大致可分为三类：List,Set和Map。&lt;br&gt;
+  三种集合的创建方法都非常相似，以List为例&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;
+fun main(){
+    val list=listOf(&amp;quot;Apple&amp;quot;,&amp;quot;Banana&amp;quot;,&amp;quot;Pear&amp;quot;)
+    for (i in list){
+        println(i)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Apple&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Banana&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Pear&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;lisOf是kotlin的一个内置函数，用于初始化list。set和map对应的则是setOf和mapOf。但需要注意的是这样创建的集合是无法修改的，因为kotlin默认创建的变量会无法修改(必须要修改的除外)。若想创建可以修改的集合要对应换成mutableListOf()等&lt;/code&gt;&lt;br&gt;
+  对map要特殊一点，其它两种要添加新量只需使用*fruit.add()*式的函数。而map，则只需直接添加，如&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;fun main(){
+    var map=mutableListOf(&amp;quot;Apple&amp;quot; to 1,&amp;quot;Banana&amp;quot; to 2,&amp;quot;Pear&amp;quot; to 3)
+    map[&amp;quot;Peach&amp;quot;]=4
+    for((fruit,number) in map){
+        println(&amp;quot;$fruit is $number&amp;quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Apple is 1&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Banana is 2&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Pear is 3&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Peach is 4&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Ps:Set与List的具体区别见&lt;a href=&#34;https://www.cnblogs.com/helloworldcode/p/12122072.html&#34;&gt;Set与List&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;六-lambda编程&#34;&gt;六、Lambda编程&lt;/h2&gt;
+&lt;p&gt;  Lambda的基本语法结构为：&lt;/p&gt;
+&lt;center style=&#34;font-size:18px;color:red&#34;&gt;{参数1:参数类型，参数名2:参数类型2-&gt;函数体}&lt;/center&gt;
+最外一层是一个大括号，首先要申明函数列表，然后只需函数体，再将函数体的结果当作最后的值，可以当作参数传递给函数。
+&lt;pre&gt;&lt;code class=&#34;language-kotlin&#34;&gt;val maxLengthFruit=list.maxBy({fruit:String-&amp;gt;fruit.length})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;这就是一个Lambda编程的例子。list是一个列表，而maxBy方法是将list里得元素一个个取出来，带入Lambda表达式中，再比较大小，取出最大者。&lt;/code&gt;&lt;br&gt;
+  在最后附上&lt;a href=&#34;https://play.kotlinlang.org/byExample/overview&#34;&gt;官方文档&lt;/a&gt;和&lt;a href=&#34;https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS4zLjcyIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5vcGVuIGNsYXNzIFBlcnNvbih2YWwgbmFtZTpTdHJpbmcsdmFsIGFnZTpJbnQpe1xuICAgIGZ1biBlYXQoKXtcbiAgICAgICAgcHJpbnRsbihuYW1lK1wiaXMgZWF0aW5nLkhlIGlzIFwiK2FnZStcInllYXJzIG9sZC5cIilcbiAgICB9XG59XG5jbGFzcyBTdHVkZW50KHZhbCBzbm86SW50LHZhbCBncmFkZTpJbnQsbmFtZTpTdHJpbmcsYWdlOkludCk6UGVyc29uKG5hbWUsYWdlKXtcbiAgICBpbml0e1xuICAgICAgICBwcmludGxuKFwiTmFtZTpcIituYW1lK1wiXFxuXCIpXG4gICAgXHRwcmludGxuKFwiU25vOlwiK3NubylcbiAgICAgICAgfVxufVxuZnVuIG1haW4oYXJnczogQXJyYXk8U3RyaW5nPikge1xuICAgIHZhbCBhPVN0dWRlbnQoMTIzNCwyLFwiUGV0ZXJcIiwxMilcbiAgICBhLmVhdCgpXG59In0=&#34;&gt;网页程序运行端&lt;/a&gt;&lt;/p&gt;
 &lt;hr class=&#34;footnotes-sep&#34;&gt;
 &lt;section class=&#34;footnotes&#34;&gt;
 &lt;ol class=&#34;footnotes-list&#34;&gt;
@@ -1343,7 +1384,7 @@ fun main(){
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-">Kotlin笔记</a>
+">Kotlin简略笔记</a>
       </div>
       
       <div class="item">
