@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Iseulf.github.io/</id>
     <title>Iseulf</title>
-    <updated>2020-07-06T12:59:10.649Z</updated>
+    <updated>2020-07-06T13:01:14.345Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Iseulf.github.io/"/>
     <link rel="self" href="https://Iseulf.github.io/atom.xml"/>
@@ -40,7 +40,7 @@
     }
 }
 </code></pre>
-<p>上面就是一个函数的标准写法例子，参数按<mark>参数名:参数类型</mark>传递，如果函数有返回值则采用==:类型名==来指定。</p>
+<p>上面就是一个函数的标准写法例子，参数按<mark>参数名:参数类型</mark>传递，如果函数有返回值则采用<mark>函数名:类型名</mark>来指定。</p>
 <h2 id="二-条件语句">二、条件语句</h2>
 <p>  Kotlin有两种类型的条件语句：if和when。</p>
 <h3 id="1-if">1、if</h3>
