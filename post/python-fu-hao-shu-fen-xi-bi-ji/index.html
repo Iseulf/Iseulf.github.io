@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="一个有趣到爆炸的帅哥！">
 <meta name="theme-color" content="#000">
-<title>Markdown基本语法 | Iseulf</title>
+<title>Python数据分析--笔记 | Iseulf</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/favicon.ico?v=1595821904812">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Iseulf/Iseulf.github.io@master/media/fonts/font-awesome.css">
@@ -62,8 +62,8 @@
 </script>
 
 
-  <meta name="description" content="Markdown基本语法" />
-  <meta name="keywords" content="笔记" />
+  <meta name="description" content="Python数据分析--笔记" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -290,36 +290,31 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E4%B8%80-%E6%A0%87%E9%A2%98">一、标题</a>
+<li><a href="#jupyter-notebook%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4">jupyter notebook常见命令</a></li>
+<li><a href="#example1%E9%9A%8F%E6%9C%BA%E6%BC%AB%E6%AD%A5">example1：随机漫步</a></li>
+<li><a href="#example2%E7%AC%A6%E5%8F%B7%E8%BF%90%E7%AE%97">example2：符号运算</a>
 <ul>
-<li><a href="#1-%E5%B1%82%E6%AC%A1%E6%A0%87%E9%A2%98">1、层次标题</a></li>
-<li><a href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98">三级标题</a></li>
-<li><a href="#2-%E5%B9%B3%E8%A1%8C%E6%A0%87%E9%A2%98">2、平行标题</a>
+<li><a href="#%E7%AC%A6%E5%8F%B7%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89">符号数的定义</a></li>
+<li><a href="#%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89">数学函数的定义</a></li>
+<li><a href="#%E6%B1%82%E8%A7%A3%E6%96%B9%E7%A8%8B%E7%BB%84">求解方程组</a>
 <ul>
-<li><a href="#%E6%9C%89%E5%BA%8F%E5%8F%B7">有序号</a></li>
-<li><a href="#%E6%97%A0%E5%BA%8F%E5%8F%B7">无序号</a></li>
-<li><a href="#%E6%97%A0%E5%BA%8F%E5%8F%B7%E7%9A%84%E5%8F%A0%E5%8A%A0">无序号的叠加</a></li>
+<li><a href="#%E6%B1%82%E8%A7%A3%E4%B8%80%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84">求解一元一次方程组</a></li>
+<li><a href="#%E6%B1%82%E8%A7%A3%E4%BA%8C%E5%85%83-%E4%B8%89%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84">求解二元、三元一次方程组</a></li>
+<li><a href="#%E4%B8%80%E5%85%83%E4%BA%8C%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3">一元二次方程的求解</a></li>
 </ul>
 </li>
+<li><a href="#%E5%BE%AE%E7%A7%AF%E5%88%86">微积分</a>
+<ul>
+<li><a href="#%E6%B1%82%E6%9E%81%E9%99%90">求极限</a></li>
+<li><a href="#%E6%B1%82%E5%BE%AE%E5%88%86">求微分</a></li>
+<li><a href="#%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B">解微分方程</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E5%AE%9A%E7%A7%AF%E5%88%86">计算定积分</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86">计算不定积分</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E5%8F%8C%E9%87%8D%E7%A7%AF%E5%88%86">计算双重积分</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E5%8F%8C%E9%87%8D%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86">计算双重不定积分</a></li>
 </ul>
 </li>
-<li><a href="#%E4%BA%8C-%E5%85%AC%E5%BC%8F%E7%9A%84%E8%BE%93%E5%85%A5">二、公式的输入</a></li>
-<li><a href="#%E4%B8%89-%E4%BB%A3%E7%A0%81%E5%9D%97">三、代码块</a></li>
-<li><a href="#%E5%9B%9B-%E5%AD%97%E4%BD%93">四、字体</a>
-<ul>
-<li><a href="#1-%E5%AD%97%E4%BD%93%E7%9A%84%E9%A2%9C%E8%89%B2%E4%B8%8E%E5%A4%A7%E5%B0%8F">1、字体的颜色与大小</a></li>
-<li><a href="#2-%E5%AD%97%E4%BD%93%E7%9A%84%E7%B1%BB%E5%9E%8B">2、字体的类型</a></li>
-</ul>
-</li>
-<li><a href="#%E4%BA%94-%E5%9B%BE%E7%89%87%E5%92%8C%E8%B6%85%E9%93%BE%E6%8E%A5%E7%9A%84%E6%8F%92%E5%85%A5">五、图片和超链接的插入</a></li>
-<li><a href="#%E5%85%AD-%E5%88%86%E5%89%B2%E7%BA%BF%E4%B8%8E%E5%BC%95%E7%94%A8">六、分割线与引用</a></li>
-<li><a href="#%E4%B8%83-%E5%90%84%E7%A7%8D%E5%B0%8F%E8%AF%AD%E6%B3%95">七、各种小语法</a>
-<ul>
-<li><a href="#1-%E7%A9%BA%E6%A0%BC%E7%AC%A6">1、空格符</a></li>
-<li><a href="#2-%E4%B8%8A%E4%B8%8B%E6%A0%87">2、上下标</a></li>
-<li><a href="#3-%E5%86%85%E5%AE%B9%E7%9B%AE%E5%BD%95">3、内容目录</a></li>
-<li><a href="#1-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7">1、特殊符号</a></li>
-<li><a href="#2-%E5%B8%B8%E8%A7%81%E5%85%AC%E5%BC%8F%E5%86%99%E6%B3%95">2、常见公式写法</a></li>
+<li><a href="#%E7%AE%97%E5%BC%8F%E6%9B%BF%E6%8D%A2">算式替换</a></li>
 </ul>
 </li>
 </ul>
@@ -589,8 +584,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://Iseulf.github.io/post/markdown-ji-ben-yu-fa/">
-      Markdown基本语法
+    <a class="post-title-link" href="https://Iseulf.github.io/post/python-fu-hao-shu-fen-xi-bi-ji/">
+      Python数据分析--笔记
     </a>
   </h1>
   <div class="post-meta">
@@ -598,36 +593,23 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span>2020-06-23</span>
+      <span>2020-07-13</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show language" data-lan="category-in">分类于</span>
-      
-      
-      <a href="https://Iseulf.github.io/tag/i1TFRGpRS/">
-        <span>笔记</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4<span class="language" data-lan="minute">分钟</span></span>
+      <span>8<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>922<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>1390<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/markdown-ji-ben-yu-fa/" data-flag-title="Markdown基本语法" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/python-fu-hao-shu-fen-xi-bi-ji/" data-flag-title="Python数据分析--笔记" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -636,236 +618,201 @@
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p>  <strong><code>Markdown是一门用于简化排版的工具，它相对于Word具有公式输入简单化的优点；而对于Latex有具有语法简单的特点，所以对于理工科等需要大量输入公式，但对排版要求不太高的学生和程序员十分适用。</code></strong><br>
-  下面就简单介绍一下Markdown的基本语法。</p>
-<h2 id="一-标题">一、标题</h2>
-<h3 id="1-层次标题">1、层次标题</h3>
-<p>  Markdown总共可以划分六个层次的标题，从一级到六级采用一个到六个#来表示，如：</p>
-<pre><code class="language-markdown">### 三级标题
-</code></pre>
-<h3 id="三级标题">三级标题</h3>
-<h3 id="2-平行标题">2、平行标题</h3>
-<p>  平行标题分为有序号和无序号两种。</p>
-<h4 id="有序号">有序号</h4>
-<p>  有序号的标题输入格式为：</p>
-<pre><code class="language-markdown">1. 
-2. 
-</code></pre>
-<ol>
-<li></li>
-<li></li>
-</ol>
-<h4 id="无序号">无序号</h4>
-<p>  无序号的标题有多种输入方式，‘+’、‘-’、‘*’+space都可以。</p>
-<pre><code class="language-markdown">+ 
-- 
-* 
-</code></pre>
+              <h2 id="jupyter-notebook常见命令">jupyter notebook常见命令</h2>
+<p><em>PS:以下命令都是在命令输入状态下，也即按ESC之后</em></p>
 <ul>
-<li></li>
+<li>A:在单元格上方插入新单元格</li>
+<li>B:在单元格下方插入新单元格</li>
+<li>X:剪切选中的单元格</li>
+<li>C:复制选中的单元格</li>
+<li>V:粘贴单元格</li>
+<li>Z:撤销</li>
+<li>M:切换到Markdown输入模式</li>
+<li>Y:切换到代码模式</li>
+<li>Shift/Ctrl+Enter:执行代码，Shift会在执行完之后在下方新建一个单元格(cell)</li>
+<li>Shift+Up/Down:选择上方/下方的cell,可多选</li>
+<li>Enter:切换到输入代码模式</li>
+<li>ESC:切换到命令模式</li>
+<li>%who:查看当前所有变量</li>
+<li>%who type:查看type类型的变量，如%who list</li>
 </ul>
+<h2 id="example1随机漫步">example1：随机漫步</h2>
+<pre><code class="language-python">from random import choice
+import matplotlib.pyplot as plt
+
+
+class RandomWalk():
+    # 定义一个随机行走的类
+    def __init__(self, num_points=5000):
+        self.x_values = [0]
+        self.y_values = [0]
+        self.num_points = num_points
+
+    def fill_walk(self):
+        # 利用循环来随机填充点
+        while len(self.x_values) &lt; self.num_points:
+            x_direction = choice([-1, 1])
+            x_distance = choice([0, 1, 2, 3, 4, 5])
+            x_step = x_direction*x_distance
+            y_direction = choice([-1, 1])
+            y_distance = choice([0, 1, 2, 3, 4, 5])
+            y_step = y_direction*y_distance
+            if x_step == 0 and y_step == 0:
+                # 若遇到(0,0)零点则重来
+                continue
+            next_x = self.x_values[-1]+x_step
+            next_y = self.y_values[-1]+y_step
+            self.x_values.append(next_x)
+            self.y_values.append(next_y)
+
+
+while True:
+    # 在不关闭窗口的情况下一直生成随机点
+    rw = RandomWalk()
+    rw.fill_walk()
+    point_numbers = list(range(rw.num_points))
+    plt.scatter(rw.x_values, rw.y_values, c=point_numbers,
+                cmap=plt.cm.Blues, edgecolor='none', s=15)
+    plt.show()
+    keep_running = input('Make another walk?(y/n):')
+    if keep_running == 'n':
+        break
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/output_3_0.png" alt="png" loading="lazy"></figure>
+<pre><code>Make another walk?(y/n):y
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://seul-1302377718.cos.ap-nanjing.myqcloud.com/markdown/output_3_2.png" alt="png" loading="lazy"></figure>
+<pre><code>Make another walk?(y/n):n
+</code></pre>
+<h2 id="example2符号运算">example2：符号运算</h2>
+<p>python的符号运算是利用<em>sympy</em>库来实现的。</p>
+<h3 id="符号数的定义">符号数的定义</h3>
 <ul>
-<li></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mi>S</mi><mi>y</mi><mi>m</mi><mi>b</mi><mi>o</mi><mi>l</mi><msup><mo>(</mo><mo mathvariant="normal">′</mo></msup><msup><mi>x</mi><mo mathvariant="normal">′</mo></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">x=Symbol(&#x27;x&#x27;)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">m</span><span class="mord mathdefault">b</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mopen"><span class="mopen">(</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>=</mo><mi>s</mi><mi>y</mi><mi>m</mi><mi>b</mi><mi>o</mi><mi>l</mi><mi>s</mi><msup><mo>(</mo><mo mathvariant="normal">′</mo></msup><mi>x</mi><mo separator="true">,</mo><msup><mi>y</mi><mo mathvariant="normal">′</mo></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">x,y=symbols(&#x27;x,y&#x27;)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">m</span><span class="mord mathdefault">b</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">s</span><span class="mopen"><span class="mopen">(</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi><mi>a</mi><mi>r</mi><msup><mo>(</mo><mo mathvariant="normal">′</mo></msup><mi>x</mi><mo separator="true">,</mo><msup><mi>y</mi><mo mathvariant="normal">′</mo></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">var(&#x27;x,y&#x27;)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen"><span class="mopen">(</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
 </ul>
-<ul>
-<li></li>
-</ul>
-<h4 id="无序号的叠加">无序号的叠加</h4>
-<p>  无序号的标题可以叠加，如：</p>
-<pre><code class="language-markdown">+ 
-    - 
+<p>第2、3种定义方式都是定义出x,y符号变量</p>
+<p>还可以指定符号变量的类型：整型、实型、复数等。</p>
+<pre><code class="language-python">import sympy as sy
+x = sy.Symbol('x')
+y = sy.Symbol('y')
+k, m, n = sy.symbols('k,m,n',integer=True) 
+#指定k,m,n为整型
+sy.var('z,h')
+%who Symbol
 </code></pre>
-<ul>
-<li>
-<ul>
-<li></li>
-</ul>
-</li>
-</ul>
-<h2 id="二-公式的输入">二、公式的输入</h2>
-<p>  Markdown支持Latex模式输入公式，有行间插入和居中插入两种模式。如：</p>
-<pre><code class="language-markdown">$a^2+b^2=c^2$
-$$
-\frac{1}{a}=v^2-1
-$$
+<pre><code>h	 k	 m	 n	 x	 y	 z	 
 </code></pre>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a^2+b^2=c^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mn>1</mn><mi>a</mi></mfrac><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{1}{a}=v^2-1
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.9474379999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></span></p>
-<p>具体公式的Latex语法见<a href="#1">Markdown可能用到的Latex语法</a></p>
-<h2 id="三-代码块">三、代码块</h2>
-<p>Markdown支持多种语言的输入，语法格式为<br>
-<code>```语言名 代码区 ```</code><br>
-如：</p>
-<pre><code class="language-markdwon">```python
-print('hello world')
+<h3 id="数学函数的定义">数学函数的定义</h3>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><mi>F</mi><mi>u</mi><mi>n</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><msup><mo>(</mo><mo mathvariant="normal">′</mo></msup><msup><mi>y</mi><mo mathvariant="normal">′</mo></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">y=Function(&#x27;y&#x27;)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault">u</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mord mathdefault">t</span><span class="mord mathdefault">i</span><span class="mord mathdefault">o</span><span class="mord mathdefault">n</span><span class="mopen"><span class="mopen">(</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p><em>这实际上是创建了一个类y,该类继承自Function类。而使用y如y(t)相当于创建了y的一个实例,该实例还可以作为整体参与运算</em></p>
+<pre><code class="language-python">import sympy as sy
+f=sy.Function('f')
+t=f(x,y)
+t**3+2*t
 </code></pre>
-<pre><code class="language-python">print('hello world')
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><msup><mi>f</mi><mn>3</mn></msup><mrow><mo fence="true">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo fence="true">)</mo></mrow><mo>+</mo><mn>2</mn><mi>f</mi><mrow><mo fence="true">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle f^{3}{\left(x,y \right)} + 2 f{\left(x,y \right)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
+<h3 id="求解方程组">求解方程组</h3>
+<h4 id="求解一元一次方程组">求解一元一次方程组</h4>
+<pre><code class="language-python">from sympy import *
+x = Symbol('x')
+e = solve(5*x+x-4, x)
+print(e)
 </code></pre>
-<h2 id="四-字体">四、字体</h2>
-<h3 id="1-字体的颜色与大小">1、字体的颜色与大小</h3>
-<p>  Markdown本身并没有特地的语法去调整字体的颜色与大小，但它兼容了Html的语法。</p>
-<pre><code class="language-markdown">&lt;font color=red&gt;这是调整颜色&lt;/font&gt;
-&lt;font size=10&gt;这是调整尺寸&lt;/font&gt;
-&lt;center&gt;这是居中&lt;/center&gt;
-&lt;font face=&quot;逐浪立楷&quot;&gt;这是调整字体&lt;/font&gt;
+<pre><code>[2/3]
 </code></pre>
-<p><font color=red>这是调整颜色</font><br>
-<font size=10>这是调整尺寸</font></p>
-<center>这是居中</center>
-<font face="逐浪立楷">这是调整字体</font>
-<h3 id="2-字体的类型">2、字体的类型</h3>
-<pre><code class="language-markdown">*这是斜体*
-**这是粗体**
-~~这是加删除线~~
+<h4 id="求解二元-三元一次方程组">求解二元、三元一次方程组</h4>
+<pre><code class="language-python">from sympy import *
+x, y, z = symbols('x,y,z')
+e = solve([x+y-2, x-y+3], [x, y])
+print('x={},y={}'.format(e[x], e[y]))
+print(solve([x+y+z, x-y-z-3, x+y-z+6], [x, y, z]))
+# print('e1={},e2={},e3={}'.format(e1,e2,e3))
 </code></pre>
-<p><em>这是斜体</em><br>
-<strong>这是粗体</strong><br>
-<s>这是加删除线</s></p>
-<h2 id="五-图片和超链接的插入">五、图片和超链接的插入</h2>
-<p>  图片和超链接原本的插入方法十分简单(下表中的中括号与小括号间应该没有空格，但为了防止错误识别故加了一个)</p>
-<table>
-<thead>
-<tr>
-<th>图片</th>
-<th>超链接</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>![参数] (链接)</td>
-<td>[文字描述] (链接)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="六-分割线与引用">六、分割线与引用</h2>
-<p>  引用可以把文字加上一个框以示与正文的区别。</p>
-<pre><code class="language-markdown">&gt; 这是引用
+<pre><code>x=-1/2,y=5/2
+{x: 3/2, y: -9/2, z: 3}
 </code></pre>
-<blockquote>
-<p>这是引用</p>
-</blockquote>
-<p>  分割线就是加一道分割线。</p>
-<pre><code class="language-markdown">--- 
-***
-__________
-********
+<h4 id="一元二次方程的求解">一元二次方程的求解</h4>
+<pre><code class="language-python">from sympy import *
+x=Symbol('x')
+e=solve(x**2-3*x+1,x)
+print('x1={},x2={}'.format(e[0],e[1]))
 </code></pre>
-<p>  以上的效果都如下：</p>
-<hr>
-<h2 id="七-各种小语法">七、各种小语法</h2>
-<h3 id="1-空格符">1、空格符</h3>
-<p>  Markdown语法中并没有空格，要手动插入空格符:</p>
-<pre><code class="language-markdown">&amp;emsp;&amp;emsp;这是两个空格符
+<pre><code>x1=3/2 - sqrt(5)/2,x2=sqrt(5)/2 + 3/2
 </code></pre>
-<p>  这是两个空格符</p>
-<h3 id="2-上下标">2、上下标</h3>
-<p>  Markdown本身语法自带有上下标，但也可以使用公式插入里的latex语法实现。</p>
-<pre><code class="language-markdown">A~这是下标~
-A^这是上标^
+<h3 id="微积分">微积分</h3>
+<h4 id="求极限">求极限</h4>
+<p><em>limit</em>运算符：limit(expr,x,a)</p>
+<p>表示求<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>lim</mi><mo>⁡</mo><mrow><mi>x</mi><mo>→</mo><mi>a</mi></mrow></msub><mi>e</mi><mi>x</mi><mi>p</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">\lim_{x \to a}expr</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop"><span class="mop">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mrel mtight">→</span><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span></p>
+<pre><code class="language-python">from sympy import *
+x = Symbol('x')
+e = limit(sin(x)/x, x, 0)
+print(e)
 </code></pre>
-<p>A<sub>这是下标</sub><br>
-A<sup>这是上标</sup></p>
-<h3 id="3-内容目录">3、内容目录</h3>
-<p>  Markdown有根据标题自动生成目录的功能，即为：</p>
-<pre><code class="language-markdown">[TOC]
+<pre><code>1
 </code></pre>
-<p>  <em>PS:我所使用的编译器不支持这个功能，在此可以推荐Typora</em></p>
-<h2 id="1"> 八、Markdown可能用到的Latex语法</h2>
-<h3 id="1-特殊符号">1、特殊符号</h3>
-<table>
-<thead>
-<tr>
-<th>符号</th>
-<th>写法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≥</span></span></span></span></td>
-<td>$\geq$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≤</span></span></span></span></td>
-<td>$\leq$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span></span></span></span></td>
-<td>$\beta$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>←</mo></mrow><annotation encoding="application/x-tex">\gets</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">←</span></span></span></span></td>
-<td>$\gets$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span></td>
-<td>$\to$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">ℏ</mi></mrow><annotation encoding="application/x-tex">\hbar</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord">ℏ</span></span></span></span></td>
-<td>$\hbar$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>γ</mi></mrow><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05556em;">γ</span></span></span></span></td>
-<td>$\gamma$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span></td>
-<td>$\alpha$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span></td>
-<td>$\pi$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span></span></span></span></td>
-<td>$\delta$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Δ</mi></mrow><annotation encoding="application/x-tex">\Delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Δ</span></span></span></span></td>
-<td>$\Delta$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span></td>
-<td>$\lambda$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span></td>
-<td>$\mu$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span></span></td>
-<td>$\omega$</td>
-</tr>
-<tr>
-<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span></span></span></span></td>
-<td>$\Omega$</td>
-</tr>
-</tbody>
-</table>
-<p><em>PS:更多的见<a href="https://www.mohu.org/info/symbols/symbols.htm">Latex特殊符号</a></em></p>
-<h3 id="2-常见公式写法">2、常见公式写法</h3>
-<ul>
-<li>分式<pre><code class="language-mrkdown">$\frac{a}{b}$
+<h4 id="求微分">求微分</h4>
+<p>diff运算符：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>i</mi><mi>f</mi><mi>f</mi><mo>(</mo><mi>f</mi><mo separator="true">,</mo><mi>x</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>=</mo><msup><mi>f</mi><mi>n</mi></msup><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">diff(f,x,n)=f^n(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span></p>
+<pre><code class="language-python">import sympy as sy
+x=sy.Symbol('x')
+f=x**2*sy.sin(x)
+sy.diff(f,x,2)
 </code></pre>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.040392em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
-<li>求和<pre><code class="language-markdown">$\sum\nolimits_{n=1}^{n}$
-$\sum\limits_{n=1}^{n}$
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mi>sin</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow><mo>+</mo><mn>4</mn><mi>x</mi><mi>cos</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow><mo>+</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle - x^{2} \sin{\left(x \right)} + 4 x \cos{\left(x \right)} + 2 \sin{\left(x \right)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
+<h4 id="解微分方程">解微分方程</h4>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>s</mi><mi>o</mi><mi>l</mi><mi>v</mi><mi>e</mi><mo>:</mo><mi>d</mi><mi>s</mi><mi>o</mi><mi>l</mi><mi>v</mi><mi>e</mi><mo>(</mo><mi>e</mi><mi>x</mi><mi>p</mi><mi>r</mi><mo separator="true">,</mo><mi>y</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">dsolve:dsolve(expr,y(x))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">s</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">s</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></p>
+<p><em>expr=0,求解y(x)</em></p>
+<p><strong>注意：这个y要事先定义为y=sympy.Function('y')</strong></p>
+<pre><code class="language-python">import sympy as sy
+x=sy.Symbol('x',real=True)
+y=sy.Function('y')
+sy.dsolve(y(x).diff(x)+y(x)**2+y(x),y(x))
 </code></pre>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.104002em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span></span></span></span><br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><annotation encoding="application/x-tex">\sum\limits_{n=1}^{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.3185100000000003em;vertical-align:-0.9671129999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513970000000004em;"><span style="top:-2.132887em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0000050000000003em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op">∑</span></span></span><span style="top:-3.950005em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9671129999999999em;"><span></span></span></span></span></span></span></span></span></li>
-<li>连乘<pre><code class="language-markdown">$\prod\nolimits_{n=1}^{n}$
-$\prod\limits_{n=1}^{n}$
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>y</mi><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac><msub><mi>C</mi><mn>1</mn></msub><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>−</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle y{\left(x \right)} = - \frac{C_{1}}{C_{1} - e^{x}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord">−</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.590392em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<h4 id="计算定积分">计算定积分</h4>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>:</mo><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>(</mo><mi>f</mi><mo separator="true">,</mo><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo><mo>)</mo><mo>=</mo><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">integrate:integrate(f,(x,a,b))=\int_a^bf(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.399828em;vertical-align:-0.35582em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0005599999999999772em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.044008em;"><span style="top:-2.34418em;margin-left:-0.19445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">a</span></span></span><span style="top:-3.2579000000000002em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.35582em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span></p>
+<pre><code class="language-python">import sympy as sy
+x=sy.Symbol('x')
+sy.integrate(x**2*sy.sin(x),(x,0,1))
 </code></pre>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><annotation encoding="application/x-tex">\prod\nolimits_{n=1}^{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.104002em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span></span></span></span><br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∏</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup></mrow><annotation encoding="application/x-tex">\prod\limits_{n=1}^{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.3185100000000003em;vertical-align:-0.9671129999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513970000000004em;"><span style="top:-2.132887em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.0000050000000003em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op">∏</span></span></span><span style="top:-3.950005em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9671129999999999em;"><span></span></span></span></span></span></span></span></span></li>
-<li>上下标<pre><code class="language-markdown">$a_1$
-$a^1$
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mo>−</mo><mn>2</mn><mo>+</mo><mi>cos</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mn>1</mn><mo fence="true">)</mo></mrow><mo>+</mo><mn>2</mn><mi>sin</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mn>1</mn><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle -2 + \cos{\left(1 \right)} + 2 \sin{\left(1 \right)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
+<h4 id="计算不定积分">计算不定积分</h4>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>:</mo><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>(</mo><mi>f</mi><mo separator="true">,</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>∫</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">integrate:integrate(f,x)=\int f(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0005599999999999772em;">∫</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span></p>
+<pre><code class="language-python">import sympy as sy
+x=sy.Symbol('x')
+sy.integrate(x**2*sy.sin(x),x)
 </code></pre>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>a</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">a^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span><br>
-<strong>更多语法见<a href="https://blog.csdn.net/u012339743/article/details/80805613">Latex常见语法</a></strong></li>
-</ul>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mi>cos</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow><mo>+</mo><mn>2</mn><mi>x</mi><mi>sin</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow><mo>+</mo><mn>2</mn><mi>cos</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>x</mi><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle - x^{2} \cos{\left(x \right)} + 2 x \sin{\left(x \right)} + 2 \cos{\left(x \right)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141079999999999em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">x</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
+<h4 id="计算双重积分">计算双重积分</h4>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>(</mo><mi>f</mi><mo separator="true">,</mo><mo>(</mo><mi>x</mi><mo separator="true">,</mo><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>)</mo><mo separator="true">,</mo><mo>(</mo><mi>y</mi><mo separator="true">,</mo><msub><mi>y</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>)</mo><mo>)</mo><mo>=</mo><msubsup><mo>∫</mo><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub></msubsup><msubsup><mo>∫</mo><msub><mi>y</mi><mn>1</mn></msub><msub><mi>y</mi><mn>2</mn></msub></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo><mi>d</mi><mi>y</mi><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">integrate(f,(x,x_1,x_2),(y,y_1,y_2))=\int_{x_1}^{x_2}\int_{y_1}^{y_2}f(x,y)dydx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.35122em;vertical-align:-0.49192800000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0005599999999999772em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.859292em;"><span style="top:-2.34418em;margin-left:-0.19445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.2579em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.45592em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0005599999999999772em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8592920000000002em;"><span style="top:-2.34418em;margin-left:-0.19445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.2579000000000002em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.49192800000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord mathdefault">d</span><span class="mord mathdefault">x</span></span></span></span></p>
+<pre><code class="language-python">import sympy as sy
+x,y=sy.symbols('x,y')
+sy.integrate(3/4*x+2*y*x,(x,0,1),(y,-3,4))
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mn>6.125</mn></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle 6.125</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">.</span><span class="mord">1</span><span class="mord">2</span><span class="mord">5</span></span></span></span></p>
+<h4 id="计算双重不定积分">计算双重不定积分</h4>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>t</mi><mi>e</mi><mi>g</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>e</mi><mo>(</mo><mi>f</mi><mo separator="true">,</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo><mo>=</mo><mo>∫</mo><mi>f</mi><mi>d</mi><mi>x</mi><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">integrate(f,x,y)=\int fdxdy</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0005599999999999772em;">∫</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">d</span><span class="mord mathdefault">x</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span></p>
+<pre><code class="language-python">import sympy as sy
+x,y=sy.symbols('x,y')
+sy.integrate(x*y,x,y)
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \frac{x^{2} y^{2}}{4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.177108em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.491108em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">4</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<h3 id="算式替换">算式替换</h3>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>u</mi><mi>b</mi><mi>s</mi><mo>:</mo><mi>e</mi><mi>x</mi><mi>p</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>s</mi><mi>u</mi><mi>b</mi><mi>s</mi><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">subs:expr.subs(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span></p>
+<p>将expr表达式中的x替换为y.还可以同时进行多个字母的替换</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi><mi>x</mi><mi>p</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>s</mi><mi>u</mi><mi>b</mi><mi>s</mi><mo>(</mo><mo>{</mo><mi>x</mi><mo>:</mo><mi>y</mi><mo separator="true">,</mo><mi>t</mi><mo>:</mo><mi>z</mi><mo>}</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">expr.subs(\{x:y,t:z\})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mopen">{</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mclose">}</span><span class="mclose">)</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi><mi>x</mi><mi>p</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>s</mi><mi>u</mi><mi>b</mi><mi>s</mi><mo>(</mo><mo>[</mo><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo><mo separator="true">,</mo><mo>(</mo><mi>t</mi><mo separator="true">,</mo><mi>z</mi><mo>)</mo><mo>]</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">expr.subs([(x,y),(t,z)])</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mopen">[</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord mathdefault">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mclose">]</span><span class="mclose">)</span></span></span></span></p>
+<p><strong>但注意以上的操作都不会影响原表达式expr的额值，只是返回一个替换了的表达式</strong></p>
+<pre><code class="language-python">import sympy as sy
+x,y=sy.symbols('x,y')
+f=x**2+1
+print(f.subs(x,y))
+print(f)
+</code></pre>
+<pre><code>y**2 + 1
+x**2 + 1
+</code></pre>
 
             </div>
             
@@ -878,7 +825,7 @@ $a^1$
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://Iseulf.github.io/post/markdown-ji-ben-yu-fa/" title="Markdown基本语法">https://Iseulf.github.io/post/markdown-ji-ben-yu-fa/</a>
+      <a href="https://Iseulf.github.io/post/python-fu-hao-shu-fen-xi-bi-ji/" title="Python数据分析--笔记">https://Iseulf.github.io/post/python-fu-hao-shu-fen-xi-bi-ji/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -887,21 +834,19 @@ $a^1$
   </ul>
   <div class="tags">
     
-      <a href="https://Iseulf.github.io/tag/i1TFRGpRS/"># 笔记</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
         <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="App推荐---阅读3.0" href="https://Iseulf.github.io/post/app-tui-jian-yue-du-30/">App推荐---阅读3.0</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="App推荐---阅读3.0" href="https://Iseulf.github.io/post/app-tui-jian-yue-du-30/">上一篇</a>
+        <a class="nav-pc-next" title="Python二维绘图笔记" href="https://Iseulf.github.io/post/python-er-wei-hui-tu-bi-ji/">Python二维绘图笔记</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="Python二维绘图笔记" href="https://Iseulf.github.io/post/python-er-wei-hui-tu-bi-ji/">上一篇</a>
       
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="软件推荐---Listary Pro" href="https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/">软件推荐---Listary Pro</a>
-        <a class="nav-mobile-next" title="软件推荐---Listary Pro" href="https://Iseulf.github.io/post/ruan-jian-tui-jian-listary-pro/">下一篇</a>
+        <a class="nav-pc-next" title="Python数据分析--环境配置" href="https://Iseulf.github.io/post/python-shu-ju-chu-li-sympy-ku/">Python数据分析--环境配置</a>
+        <a class="nav-mobile-next" title="Python数据分析--环境配置" href="https://Iseulf.github.io/post/python-shu-ju-chu-li-sympy-ku/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
